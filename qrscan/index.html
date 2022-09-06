@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preload" href="./pic/blurNew1.jpg" as="image" />
+  </head>
+  <body id="hideSB">
+    <div id="banner">
+      <div class="text anaglyph">Safe Site Checker</div>
+    </div>
+    
+    <div id="check">      
+      <div id="result">
+        <div id="instruction">
+          <h1>Feeling <span>UNSAFE</span> about the <span>Website</span> you are going to open?</h1>
+          <h2><span>Checking Malicious</span> website and take its <span>Screenshots</span> before go to that website</h2>
+          <h2>Checking with <span>QR code</span> or a <span>Link</span></h2>
+        </div>
+        <div id="yourURL">
+          <div id="urlInput">
+            <label id="forUrl" for="url">YOUR URL</label>
+            <input type="text" id="url" name="url"><br>  
+          </div>          
+          <div id="urlOutput">
+            <button onclick="getURL()">Submit URL</button>     
+            <button onclick="clearURL()">Clear URL</button>
+          </div>
+        </div>
+        <div id="container">
+          <div id="reader"></div>
+          <div id="qrCode">
+            <img src="./pic/frame1.svg" alt="My Website" id="frameQR" ontouchstart="scanQRcode()"/>
+           <!-- <button id="clickme" onclick="scanQRcode()" >Click me to Scan QR code</button>-->
+          </div>
+          <button id="btn" onclick="reScan()">Rescan</button>
+        </div>
+
+         
+        <section id="safeCheckResult">
+          <div id="layer">
+            <div id="holdOutput">
+              <a id="output" href="">GO TO YOUR URL</a> 
+            </div>
+            <p id="category">Category: ?</p>
+            <p id="unsafe">Unsafe: ?</p>
+            <p id="domain">Domain: ?</p>
+            <p id="spamming">Spamming: ?</p>
+            <p id="malware">Malware: ?</p>
+            <p id="phishing">Phishing: ?</p>
+            <p id="suspicious">Suspicious: ?</p>
+            <p id="adult">Adult: ?</p>
+            <p id="risk_score">Risk score: ?</p>
+            <div id="openScreenshot">
+              <button id="getScreenshot" onclick="displaySS()" disabled>View Screenshot</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="showScreenshot">
+      <div id="imgContainer">
+        <img id="myimg" src=""/>
+      </div>      
+      <button id="hideScreenshot" onclick="hideSS()">Hide Screenshot</button>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

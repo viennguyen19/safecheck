@@ -1,0 +1,42 @@
+{
+  "files": {
+    "index.js": [
+      {
+        "id": "88ffb06a-336b-483e-a64a-bbf6563cb951",
+        "line": 1,
+        "version": 3777,
+        "index": 0
+      }
+    ],
+    "qrscan/index.html": [
+      {
+        "id": "0c1a64df-2bec-4c75-9775-11fe99a11a0a",
+        "line": 76,
+        "version": 2082,
+        "index": 2846
+      }
+    ],
+    "qrscan/script.js": [
+      {
+        "id": "4d239778-a85b-4520-8ab1-c02f0ccfc282",
+        "line": 1,
+        "version": 4597,
+        "index": 0
+      },
+      {
+        "id": "15baa859-d0a0-4f8b-b41b-c7edefcb51c9",
+        "line": 197,
+        "version": 4597,
+        "index": 6013
+      }
+    ],
+    "qrscan/style.css": [
+      {
+        "id": "2b5f1396-99b4-4ea8-9c10-72a7e914be84",
+        "line": 12,
+        "version": 9805,
+        "index": 145
+      }
+    ]
+  }
+}

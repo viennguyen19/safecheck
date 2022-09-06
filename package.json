@@ -1,0 +1,22 @@
+{
+  "name": "safeqr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "image-to-base64": "^2.2.0",
+    "node-fetch": "^3.2.10",
+    "Require": "^1.1.2",
+    "socket.io": "^4.4.1",
+    "thum.io": "^1.0.9",
+    "valid-url": "^1.0.9"
+  }
+}

@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./pic/blurImage1.jpg");
+  background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  width: 100vw;
+  height: 40px;
+  background: red;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#check {
+  width: 100vw;
+  height: (100% - 40px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+}
+#container {
+  width: 35vw;
+  height: 100vh;
+  //background: #538FBA;
+  bcakground: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#reader {
+  width: 95%;
+  height: auto;
+  background: #49BCFC;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#reader__scan_region {
+  background: #49BCFC;
+  width: 50%;
+}
+
+#myimg {
+  display: none;
+  width: 100%;
+  maring-top: 10%;
+}
+
+@media (max-width: 750px) {
+  #container {
+    width: 95%;
+  }
+  #result {
+    width: 95%;
+  }
+  #reader {
+    width: 100%;
+  }
+  body, #check {
+    flex-direction: column;
+    overflow: visible;
+      background-image: url("./pic/blurImage1.jpg");
+  background-size: cover;
+  }
+}
+
+button {
+  width: 120px;
+  background-color: #252847;
+  background-image: linear-gradient(180deg, #be6e2d 0%, #991a1a 74%);
+  border: none;
+  font-size: 1rem;
+  transition: all 1.6s ease-in-out;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+button:hover {
+  color: #fff;
+  background-image: linear-gradient(90deg, #991a1a 0%, #be6e2d 74%);
+}
+
+#reader__dashboard_section_csr > * {
+  border: 20px solid transparent;
+}
+
+#reader__dashboard_section_swaplink {
+  border: 20px solid transparent;
+}
+
+* {
+  transition: all 0.5s ease;
+}
+
+
+#yourURL {
+  width: 100%;
+  height: 15%;
+  //background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#urlInput{
+  //border: 1px solid pink;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+}
+#urlOutput {
+  //border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  
+  width: 100%;
+  height: 50%;
+}
+
+#urlOutput button {
+  padding: 3px;
+}
+
+#url {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#forUrl {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+
+
+#url {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#result a {
+  width: 100%;
+  height: auto;
+  //background: yellow;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#holdOutput {
+  width: 100%;
+  height: 20px;
+  //border: 2px solid green;
+}
+
+#safeCheckResult {
+  width: 100%;
+  //border: 2px solid red;
+  text-align: center; 
+  line-height: 150%;
+}
+
+#openScreenshot {
+  margin-top: 3%;
+}
+
+#result {
+  width: 65vw;
+  height: 100vh;
+  //background: #538FBA;
+  color: #F6BE00;
+  background: transparent;
+  position: relative;
+}
+
+#instruction * {
+  line-height: 150%;
+}
+
+#instruction {
+  width: 100%;
+  height: 30%;
+  //background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#safeCheckResult p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

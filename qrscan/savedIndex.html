@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="banner">Safe Site Check</div>
+    <div id="check">
+      <div id="container">
+        <div id="reader"></div>  
+        <button id="btn" onclick="reScan()">Rescan</button>
+      </div>
+      
+      <div id="result">
+        <div id="instruction">
+          <h1>Feeling <span>UNSAFE</span> about the <span>Website</span> you are going to open?</h1>
+          <h3><span>Checking Malicious</span> website and take its <span>Screenshots</span> before go to that website</h3>
+          <h3>Having <span>QR code</span> or a <span>Link</span></h3>
+          <h1>Let's check</h1>
+        </div>
+        <div id="yourURL">
+          <div id="urlInput">
+            <label id="forUrl" for="url"><h2>YOUR URL</h2></label><br>
+            <input type="text" id="url" name="url"><br>  
+          </div>          
+          <div id="urlOutput">
+            <button onclick="getURL()">Submit URL</button>     
+            <button onclick="clearURL()">Clear URL</button>
+          </div>
+        </div> 
+
+        <img id="myimg" src="" />
+        <section id="safeCheckResult">
+          <div id="holdOutput">
+            <a id="output" href="">GO TO YOUR URL</a> 
+          </div>
+          <p id="unsafe">Unsafe:</p>
+          <p id="domain">Domain:</p>
+          <p id="spamming">Spamming:</p>
+          <p id="malware">Malware:</p>
+          <p id="phishing">Phishing:</p>
+          <p id="suspicious">Suspicious:</p>
+          <p id="adult">Adult:</p>
+          <p id="risk_score">Risk score:</p>
+          <div id="openScreenshot">
+            <button id="getScreenshot" onclick="displaySS()">Open Screenshot</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
