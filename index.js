@@ -96,10 +96,10 @@ function deleteImage(fs, name) {
   });
 }
 
-
+//old key AzMdtT2gMURYiRzeMppANPqNVGn4jmuZ
 function checkMaliciousURL(myUrl, socket) {
   var temp = encodeURIComponent(myUrl);
-  var mainPart = "https://ipqualityscore.com/api/json/url/AzMdtT2gMURYiRzeMppANPqNVGn4jmuZ/";
+  var mainPart = "https://ipqualityscore.com/api/json/url/jmwF3tLSZsDPM5HsZK4uRGrhroSlcxYr/";
   temp = mainPart + temp;   
   https.get(temp,(res) => {
       let body = "";
